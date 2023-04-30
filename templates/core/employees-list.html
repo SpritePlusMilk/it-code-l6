@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список Сотрудников</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="placeholder">
+
+    <div id="logo">
+        <a href="../core/index.html"><img src="{% static 'core/pics/logo.png' %}" alt="Hills logo"></a>
+      </div>
+
+    <div id="nav">
+        <a>Список сотрудников </a>
+        <a href="best-employee-of-the-month.html">Сотрудник месяца </a>
+        <a href="add-employee.html">Добавить сотрудника </a>
+    </div>
+  </div>
+
+  <h1>Список Сотрудников: </h1>
+
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <th>Имя и Фамилия</th>
+          <th>Должность</th>
+          <th>Телефон</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Валентина Назарова</td>
+          <td>Старший сыщик</td>
+          <td>+357-25-998877</td>
+        </tr>
+
+        <tr>
+          <td>Тимофей Назаров</td>
+          <td>Младший сыщик</td>
+          <td>+7-812-999-11-22</td>
+        </tr>
+
+        <tr>
+          <td>Кирилл Мухрыгин</td>
+          <td>Сотрудник архива</td>
+          <td>+7-812-999-22-33</td>
+        </tr>
+
+        <tr>
+          <td>Марвин Назаров</td>
+          <td>Талисман</td>
+          <td>+357-25-998877</td>
+        </tr>
+
+
+
+
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

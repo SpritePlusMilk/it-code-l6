@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hills</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="placeholder">
+
+      <div id="logo">
+        <img src="{% static 'core/pics/logo.png' %}" alt="Hills logo">
+      </div>
+
+      <div id="nav">
+          <a href="{% url 'core:employees' %}">Список сотрудников </a>
+          <a href="html/best-employee-of-the-month.html">Сотрудник месяца </a>
+          <a href="htmladd-employee.html">Добавить сотрудника </a>
+      </div>
+    </div>
+
+    <h1>Детективное агентство "Холмы"</h1>
+
+    <div class="main">
+        <p>{{paragraph1}}</p>
+        <p>{{paragraph2}}</p>
+
+    </div>
+
+    <div id="footer">
+      <h4>640 С Мэйн Стрит, Лос-Анджелес, CA 90014, США, 34°02′39.04″N 118°15′01.97″W</h4>
+      <h4>{{ date }}</h4>
+    </div>
+
+</body>
+</html>
